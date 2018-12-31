@@ -19,14 +19,21 @@ const CourtImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "tenniscourt.jpg" }) {
           childImageSharp {
-            fluid(maxHeight: 2366, maxWidth: 1440, cropFocus: NORTHWEST) {
-              ...GatsbyImageSharpFluid
+            fixed(height: 2366, cropFocus: NORTHWEST) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => (
+      <Img
+        className="courtPic"
+        imgStyle={{ objectPosition: "0 0" }}
+        style={{ width: "100%" }}
+        fixed={data.placeholderImage.childImageSharp.fixed}
+      />
+    )}
   />
 );
 export default CourtImage;

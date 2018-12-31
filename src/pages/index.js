@@ -6,6 +6,7 @@ import styles from "../style/index.module.css";
 import CourtImage from "../components/images/court";
 import CustomNavbar from "../components/navbar/navbar.react";
 const React = require("react");
+const HomeTopSection = require("../components/index/HomeTopSection.react");
 
 type Props = {};
 
@@ -17,6 +18,7 @@ class Index extends React.Component<Props> {
         <div className={styles.courtContainer}>
           <CourtImage />
           <div className={styles.courtOverlay} />
+          <HomeTopSection />
         </div>
       </div>
     );
