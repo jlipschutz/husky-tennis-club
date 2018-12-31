@@ -4,6 +4,7 @@ module.exports = {
     description: "Husky Tennis Club @ University of Washington",
     author: "Kevin Kang"
   },
+  pathPrefix: "/husky-tennis-club",
   plugins: [
     "gatsby-plugin-flow",
     "gatsby-plugin-react-helmet",
