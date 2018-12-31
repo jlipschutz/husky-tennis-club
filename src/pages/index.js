@@ -4,8 +4,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../style/index.module.css";
 import CourtImage from "../components/images/court";
+import CustomNavbar from "../components/navbar/navbar.react";
 const React = require("react");
-const CustomNavbar = require("../components/navbar/navbar.react");
 
 type Props = {};
 
@@ -18,7 +18,6 @@ class Index extends React.Component<Props> {
           <CourtImage />
           <div className={styles.courtOverlay} />
         </div>
-        <CourtImage />
       </div>
     );
   }

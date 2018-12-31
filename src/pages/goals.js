@@ -2,8 +2,8 @@
  * @flow strict-local
  */
 import "bootstrap/dist/css/bootstrap.min.css";
+import CustomNavbar from "../components/navbar/navbar.react";
 const React = require("react");
-const CustomNavbar = require("../components/navbar/navbar.react");
 
 type Props = {};
 

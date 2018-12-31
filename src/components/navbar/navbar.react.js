@@ -71,10 +71,15 @@ class CustomNavbar extends React.Component<Props, State> {
   render(): React.Node {
     return (
       <Navbar
-        color="transparent"
         light
         expand="sm"
-        style={{ position: "absolute", top: 0, left: 0, right: 0, zIndex: 2 }}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 3
+        }}
       >
         <NavbarBrand>
           <Link
@@ -107,4 +112,4 @@ class CustomNavbar extends React.Component<Props, State> {
   }
 }
 
-module.exports = CustomNavbar;
+export default CustomNavbar;
