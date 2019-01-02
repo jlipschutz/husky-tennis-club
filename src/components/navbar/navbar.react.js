@@ -1,8 +1,11 @@
 /*
  * @flow strict-local
  */
+import type { SiteTab } from "../constants";
+
 const React = require("react");
 const { Link } = require("gatsby");
+const { SiteTabValue } = require("../constants");
 const {
   Collapse,
   Nav,
@@ -13,16 +16,6 @@ const {
   NavLink
 } = require("reactstrap");
 
-export type SiteTab = "goals" | "blog" | "events" | "contact" | "register";
-
-const SiteTabValue = {
-  goals: "Goals",
-  blog: "Blog",
-  events: "Events",
-  contact: "Contact Us",
-  register: "Register"
-};
-
 function CustomNavItem(props: {
   selected?: SiteTab,
   siteTab: SiteTab
@@ -30,22 +23,19 @@ function CustomNavItem(props: {
   const color =
     props.siteTab === "register" ? "rgba(62, 34, 3, 0.82)" : "black";
   return (
-    <NavItem>
-      <NavLink>
-        <Link
-          to={"/" + props.siteTab + "/"}
-          style={{
-            color:
-              props.selected === props.siteTab ? "rgba(70, 78, 255)" : color,
-            fontSize: 14,
-            fontWeight: "normal",
-            textDecoration: "none"
-          }}
-        >
-          {SiteTabValue[props.siteTab]}
-        </Link>
-      </NavLink>
-    </NavItem>
+    <Link
+      to={"/" + props.siteTab + "/"}
+      style={{
+        color: props.selected === props.siteTab ? "rgba(70, 78, 255)" : color,
+        fontSize: 14,
+        fontWeight: "normal",
+        textDecoration: "none"
+      }}
+    >
+      <NavItem>
+        <NavLink>{SiteTabValue[props.siteTab]}</NavLink>
+      </NavItem>
+    </Link>
   );
 }
 
@@ -112,4 +102,4 @@ class CustomNavbar extends React.Component<Props, State> {
   }
 }
 
-export default CustomNavbar;
+module.exports = CustomNavbar;

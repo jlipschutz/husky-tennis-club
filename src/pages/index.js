@@ -1,11 +1,11 @@
 /*
  * @flow strict-local
  */
-import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "../style/index.module.css";
 import CourtImage from "../components/images/court";
-import CustomNavbar from "../components/navbar/navbar.react";
+require("bootstrap/dist/css/bootstrap.min.css");
+const styles = require("../style/index.module.css");
 const React = require("react");
+const CustomNavbar = require("../components/navbar/navbar.react");
 const HomeTopSection = require("../components/index/HomeTopSection.react");
 
 type Props = {};

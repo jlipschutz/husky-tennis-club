@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700");
 
+.buttonCustom {
+  font-size: 16;
+  font-weight: 600;
+  width: 125px;
+  height: 40px;
+}
+
+.buttonTransparent:hover {
+  background-color: transparent;
+}
+
+.content {
+  z-index: 2;
+}
+
 .courtContainer {
   position: relative;
 }

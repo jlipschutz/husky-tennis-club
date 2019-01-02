@@ -36,4 +36,5 @@ const CourtImage = () => (
     )}
   />
 );
+
 export default CourtImage;
