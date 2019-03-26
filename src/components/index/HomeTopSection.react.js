@@ -56,6 +56,7 @@ class HomeSectionGeneric extends React.Component<Props> {
                 siteTab="goals"
                 color="rgba(70, 78, 255)"
                 transparent={true}
+                marginLeft={29}
               >
                 Learn More
               </GenericButton>

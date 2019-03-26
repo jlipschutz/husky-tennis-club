@@ -15,6 +15,11 @@
   z-index: 2;
 }
 
+@media (min-width: 992px) {
+  .vertCustom {
+  }
+}
+
 .courtContainer {
   position: relative;
 }
