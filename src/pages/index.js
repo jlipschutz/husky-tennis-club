@@ -2,6 +2,7 @@
  * @flow strict-local
  */
 import CourtImage from "../components/images/court";
+import HomeMidSection from "../components/index/HomeMidSection.react";
 require("bootstrap/dist/css/bootstrap.min.css");
 const styles = require("../style/index.module.css");
 const React = require("react");
@@ -19,6 +20,7 @@ class Index extends React.Component<Props> {
           <CourtImage />
           <div className={styles.courtOverlay} />
           <HomeTopSection />
+          <HomeMidSection />
         </div>
       </div>
     );
