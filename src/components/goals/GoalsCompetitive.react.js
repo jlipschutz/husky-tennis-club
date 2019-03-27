@@ -14,11 +14,11 @@ class GoalsCompetitiveSection extends React.Component<Props> {
           <div className = "competitive"
             style = {{
               paddingLeft: "5%",
-              fontSize: 70,
+              fontSize: 60,
             }}
           >
             <br />
-            <span style = {{color: "#80e5ff"}}> competitive </span> tennis
+            <span style = {{color: "#80e5ff"}}> COMPETITIVE </span> TENNIS
             <br />
             <img src={require("../../images/competitive.png")}
               alt = "2018 Nationals Team"

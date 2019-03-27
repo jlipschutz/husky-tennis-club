@@ -16,7 +16,7 @@ class Goals extends React.Component<Props> {
     return (
       <div>
         <CustomNavbar selected="goals" />
-        <div className={styles.content}>
+        <div className={styles.gradient}>
           <GoalsMissionStatement />
           <GoalsCompetitiveSection />
           <GoalsRecreationalSection />

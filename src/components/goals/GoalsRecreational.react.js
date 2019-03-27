@@ -14,18 +14,20 @@ class GoalsRecreationalSection extends React.Component<Props> {
           <div className = "recreational"
             style = {{
               paddingLeft: "5%",
-              fontSize: 70,
+              fontSize: 60,
             }}
           >
             <br />
-            <span style = {{color: "#ff8533"}}> recreational </span> tennis
+            <span style = {{color: "#ff8533"}}> RECREATIONAL </span> TENNIS
             <br />
-            <img src = {require("../../images/recreational.jpg")}
-              alt = "Recreational Tennis"
-              height = "300"
-              width = "600"
-              align = "left"
-              style = {{paddingLeft: "5%", paddingRight: "5%"}}/>
+            <div>
+              <img src = {require("../../images/recreational.png")}
+                alt = "Recreational Tennis"
+                height = "275"
+                width = "575"
+                align = "left"
+                style = {{paddingLeft: "5%", paddingRight: "5%"}}/>
+            </div>
             <div className = "recreationalDescription"
               style = {{
                 fontSize: 20,
