@@ -28,7 +28,7 @@ const CourtImage = () => (
     `}
     render={data => (
       <Img
-        className="courtPic"
+        className="courtPic courtOverlay"
         imgStyle={{ objectPosition: "0 0" }}
         style={{ width: "100%" }}
         fixed={data.placeholderImage.childImageSharp.fixed}
