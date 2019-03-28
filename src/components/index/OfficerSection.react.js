@@ -1,8 +1,6 @@
 /*
  * @flow strict-local
  */
-import Burgers from "../../components/images/burgers";
-import Nationals from "../../components/images/nationals";
 import Kevin from "../../components/images/kevin";
 import Brandon from "../../components/images/brandon";
 import Brian from "../../components/images/brian";

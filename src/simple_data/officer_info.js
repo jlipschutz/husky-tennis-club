@@ -17,33 +17,33 @@ export type Officer = {
 const OfficerData = {
   Brandon: {
     name: "Brandon Nakata",
-    position: "Co-President",
-    label: "Senior, Physics Major"
+    position: "President",
+    label: "Senior, Physics & Astronomy"
   },
   Brian: {
     name: "Brian Hou",
     position: "Student Advisor",
-    label: "Senior, CS Major"
+    label: "Senior, Computer Science"
   },
   Kevin: {
     name: "Kevin Kang",
     position: "Treasurer",
-    label: "Senior, CS Major"
+    label: "Senior, Computer Science"
   },
   Megan: {
     name: "Megan Chow",
     position: "Fundraising Chair",
-    label: "Soph, LSJ Major"
+    label: "Soph, Business"
   },
   Maddie: {
     name: "Maddie Lu",
     position: "Membership Chair",
-    label: "Junior, Biz Major"
+    label: "Junior, Business"
   },
   Boris: {
     name: "Boris Baura",
     position: "Photographer",
-    label: "Senior, Math Major"
+    label: "Senior, Math"
   }
 };
 
