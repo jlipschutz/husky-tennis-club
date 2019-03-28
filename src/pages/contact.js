@@ -8,11 +8,20 @@ const React = require("react");
 type Props = {};
 
 class Contact extends React.Component<Props> {
+  getStyle = () => {
+    return {
+      marginTop: '70px',
+      marginLeft: '20px'
+    }
+  }
   render(): React.Node {
     return (
       <div>
         <CustomNavbar selected="contact" />
-      </div>
+        <div style={this.getStyle()}>
+          <h1> Contact Us </h1>
+        </div>
+      </div >
     );
   }
 }
