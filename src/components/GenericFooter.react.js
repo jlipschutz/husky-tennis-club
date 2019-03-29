@@ -14,11 +14,11 @@ class GenericFooter extends React.Component<Props> {
       <div
         style={{
           position: "absolute",
-          bottom: this.props.bottom == undefined ? 0 : this.props.bottom,
+          bottom: this.props.bottom === undefined ? 0 : this.props.bottom,
           width: "100%",
           height: 35,
           fontSize: 11,
-          color: this.props.color == undefined ? "#144788" : this.props.color,
+          color: this.props.color === undefined ? "#144788" : this.props.color,
           textAlign: "center",
           zIndex: 3
         }}
