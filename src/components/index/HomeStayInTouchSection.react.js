@@ -45,7 +45,7 @@ class HomeStayInTouchSection extends React.Component<Props> {
             </div>
           </div>
           <div className="row d-flex justify-content-center">
-            <div className={"col-12 col-sm-5 d-flex justify-content-center"}>
+            <div className={"col-12 col-sm-4 d-flex justify-content-center"}>
               <GenericGradientButton
                 site="https://mailman13.u.washington.edu/mailman/listinfo/huskytennis"
                 width={205}
@@ -62,10 +62,10 @@ class HomeStayInTouchSection extends React.Component<Props> {
                 SUBSCRIBE TO EMAIL
               </GenericGradientButton>
             </div>
-            <div className={"d-none d-sm-block col-sm-2"} />
+            <div className={"d-none d-sm-block col-1"} />
             <div
               className={
-                "col-12 col-sm-5  d-flex justify-content-center mt-sm-0 mt-3"
+                "col-12 col-sm-4  d-flex justify-content-center mt-sm-0 mt-3"
               }
             >
               <GenericGradientButton
