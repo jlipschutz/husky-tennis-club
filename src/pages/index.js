@@ -3,6 +3,7 @@
  */
 import CourtImage from "../components/images/court";
 import HomeMidSection from "../components/index/HomeMidSection.react";
+import OfficerSection from "../components/index/OfficerSection.react";
 require("bootstrap/dist/css/bootstrap.min.css");
 const styles = require("../style/index.module.css");
 const React = require("react");
@@ -21,6 +22,7 @@ class Index extends React.Component<Props> {
           <div className={styles.courtOverlay} />
           <HomeTopSection />
           <HomeMidSection />
+          <OfficerSection />
         </div>
       </div>
     );

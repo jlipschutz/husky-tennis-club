@@ -25,13 +25,14 @@
 }
 
 .courtOverlay {
-  min-height: 100%;
+  min-height: 150%; /* Hacky but adjust this to allow more screen to be filled with gradient */
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+
   background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.6) 0%,
@@ -40,8 +41,11 @@
     linear-gradient(
       180deg,
       rgba(255, 255, 255, 0) 12.15%,
-      rgba(54, 55, 54, 0.58) 35.36%,
-      rgba(20, 21, 12, 0.98) 97.79%
+      rgba(0, 0, 0, 0.34) 25.1%,
+      rgba(0, 0, 0, 0.58) 45.86%,
+      #000000 61.33%,
+      #051d39 75.69%,
+      #000000 100%
     );
 }
 
