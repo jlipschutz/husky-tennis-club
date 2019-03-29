@@ -9,6 +9,7 @@ const styles = require("../style/index.module.css");
 const React = require("react");
 const CustomNavbar = require("../components/navbar/navbar.react");
 const HomeTopSection = require("../components/index/HomeTopSection.react");
+const HomeStayInTouchSection = require("../components/index/HomeStayInTouchSection.react");
 const GenericFooter = require("../components/GenericFooter.react");
 
 type Props = {};
@@ -24,6 +25,7 @@ class Index extends React.Component<Props> {
           <HomeTopSection />
           <HomeMidSection />
           <OfficerSection />
+          <HomeStayInTouchSection />
           <GenericFooter color="white" bottom={-1185} />
         </div>
       </div>
