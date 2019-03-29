@@ -1,8 +1,6 @@
 /*
  * @flow strict-local
  */
-import type { SiteTab } from "./constants";
-
 const style = require("../style/index.module.css");
 const React = require("react");
 const { Button } = require("reactstrap");
@@ -42,7 +40,7 @@ function SolidButton(props: {
 class GenericButton extends React.Component<Props> {
   render(): React.Node {
     return (
-      <a href={this.props.site} target="_blank">
+      <a href={this.props.site} rel="noopener noreferrer" target="_blank">
         <SolidButton
           marginLeft={this.props.marginLeft}
           width={this.props.width}
