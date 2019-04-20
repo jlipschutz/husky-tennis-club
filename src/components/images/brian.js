@@ -13,14 +13,14 @@ import Img from "gatsby-image";
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const CourtImage = () => (
+const BrianImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "tenniscourt.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "brian.jpg" }) {
           childImageSharp {
-            fixed(height: 2366, cropFocus: NORTHWEST) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 236) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -28,13 +28,17 @@ const CourtImage = () => (
     `}
     render={data => (
       <Img
-        className="courtPic courtOverlay"
-        imgStyle={{ objectPosition: "0 0" }}
-        style={{ width: "100%" }}
-        fixed={data.placeholderImage.childImageSharp.fixed}
+        fluid={data.placeholderImage.childImageSharp.fluid}
+        style={{
+          boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.25)",
+          width: 134,
+          margin: "auto",
+          borderRadius: "50%",
+          border: "1px solid white"
+        }}
       />
     )}
   />
 );
 
-export default CourtImage;
+export default BrianImage;
