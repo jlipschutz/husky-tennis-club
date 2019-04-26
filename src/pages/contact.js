@@ -3,8 +3,8 @@
  */
 import "bootstrap/dist/css/bootstrap.min.css";
 import CustomNavbar from "../components/navbar/navbar.react";
-import GenericHeader from "../components/GenericHeader.react";
 const React = require("react");
+const GenericHeader = require("../components/GenericHeader.react");
 
 type Props = {};
 

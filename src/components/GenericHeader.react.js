@@ -1,22 +1,22 @@
-import React from 'react';
+const React = require("react");
 
 type Props = {
   children?: React.Node
 };
 
 const divStyle = {
-  marginTop: '80px',
-  marginLeft: '30px',
+  marginTop: "113px",
+  marginLeft: "30px"
 };
 
-class GenericHeader extends React.Component {
+class GenericHeader extends React.Component<Props> {
   render(): React.Node {
     return (
       <div style={divStyle}>
-        <h1>{this.props.children}</h1>
+        <h1 style={{ fontWeight: 200 }}>{this.props.children}</h1>
       </div>
     );
   }
 }
 
-export default GenericHeader;
+module.exports = GenericHeader;
