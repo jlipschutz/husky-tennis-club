@@ -4,6 +4,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import CustomNavbar from "../components/navbar/navbar.react";
 const React = require("react");
+const GenericHeader = require("../components/GenericHeader.react");
 
 type Props = {};
 
@@ -12,6 +13,7 @@ class Events extends React.Component<Props> {
     return (
       <div>
         <CustomNavbar selected="events" />
+        <GenericHeader>Events</GenericHeader>
       </div>
     );
   }
