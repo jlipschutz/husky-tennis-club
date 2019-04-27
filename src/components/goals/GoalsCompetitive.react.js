@@ -6,14 +6,10 @@ class GoalsCompetitiveSection extends React.Component<Props> {
       return (
         <div
           className={style.content}
-          style={{
-            position: "relative",
-            top: 100,
-          }}
         >
-          <div className = "competitive"
+          <div className = "container"
             style = {{
-              paddingLeft: "5%",
+              paddingHorizontal: "5%",
               fontSize: 60,
             }}
           >

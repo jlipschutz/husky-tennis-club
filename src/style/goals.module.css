@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700");
 
 .content {
-  position: absolute;
+  
 }
 
 .mission {
-  position: absolute;
+  margin-top: 100px;
 }
 
 .gradient {

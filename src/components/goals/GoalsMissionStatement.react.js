@@ -7,30 +7,27 @@ class GoalsMissionSection extends React.Component<Props> {
       <div
         className={style.mission}
         style={{
-          position: "relative",
-          top: 120,
-          textAlign: "center",
+
         }}
       >
 
-          <div className = "mission"
+          <div className = "container"
             style = {{
-              textAlign: "center",
               paddingHorizontal: "5%",
-              flex: 1,
               fontSize: 60,
               fontWeight: 350,
+              marginBottom: 100,
               lineHeight: 1.2,
             }}
 
           >
-            OUR MISSION IS TO <span style={{color: "#bb99ff"}}> PROMOTE </span> THE
-            <span style = {{color: "#c266ff"}}> GROWTH </span> OF
-            <span style = {{color: "#ff8533"}}> RECREATIONAL </span> AND
-            <span style = {{color: "#80e5ff"}}> COMPETITIVE </span> TENNIS AMONG
-            <span style = {{color: "#40bf40"}}> ALL </span> PEOPLES OF
-            <span style = {{color: "#40bf40"}}> ALL </span> SKILL LEVELS AND
-            ABILITIES
+            Our mission is to <span style={{color: "#bb99ff"}}> promote </span> the
+            <span style = {{color: "#c266ff"}}> growth </span> of
+            <span style = {{color: "#ff8533"}}> recreational </span> and
+            <span style = {{color: "#80e5ff"}}> competitive </span> tennis among
+            <span style = {{color: "#40bf40"}}> all </span> people of
+            <span style = {{color: "#40bf40"}}> all </span> skills levels and
+            abilities
           </div>
           <div className = {style.divider}> </div>
       </div>
