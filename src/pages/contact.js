@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CustomNavbar from "../components/navbar/navbar.react";
 const React = require("react");
 const GenericHeader = require("../components/GenericHeader.react");
+const { FaFacebookSquare, FaEnvelope  } = require("react-icons/fa");
+const GenericGradientButton = require("../components/GenericGradientButton.react");
 
 type Props = {};
 
@@ -14,6 +16,49 @@ class Contact extends React.Component<Props> {
       <div>
         <CustomNavbar selected="contact" />
         <GenericHeader>Contact Us</GenericHeader>
+        <div style={{ marginTop:250, marginLeft: 230 }}>
+          <h3>Still need help?</h3>
+          <div style={{ fontSize: 20, marginTop:15 }}>
+            Email us and one of the officers will answer your questions.
+          </div>
+          <div style={{ marginTop: 15 }}>
+            <GenericGradientButton
+              site="https://mailman13.u.washington.edu/mailman/listinfo/huskytennis"
+              width={205}
+            >
+              <span
+                style={{
+                  display: "inline-block",
+                  fontSize: 16,
+                  marginRight: 18
+                }}
+              >
+                <FaEnvelope />
+              </span>
+              EMAIL
+            </GenericGradientButton>
+          </div>
+          <div style={{ fontSize: 20, marginTop:50 }}>
+            Join our Facebook group!
+          </div>
+          <div style={{marginTop: 15}}>
+          <GenericGradientButton
+            site="https://www.facebook.com/groups/huskytennisclub/"
+            width={205}
+          >
+            <span
+              style={{
+                display: "inline-block",
+                fontSize: 16,
+                marginRight: 18
+              }}
+            >
+              <FaFacebookSquare />
+            </span>
+            FACEBOOK GROUP
+          </GenericGradientButton>
+          </div>
+        </div>
       </div>
     );
   }
