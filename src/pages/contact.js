@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CustomNavbar from "../components/navbar/navbar.react";
 const React = require("react");
 const GenericHeader = require("../components/GenericHeader.react");
-const { FaFacebookSquare, FaEnvelope  } = require("react-icons/fa");
+const { FaFacebookSquare, FaEnvelope } = require("react-icons/fa");
 const GenericGradientButton = require("../components/GenericGradientButton.react");
 
 type Props = {};
@@ -23,7 +23,7 @@ class Contact extends React.Component<Props> {
           </div>
           <div style={{ marginTop: 15 }}>
             <GenericGradientButton
-              site="https://mailman13.u.washington.edu/mailman/listinfo/huskytennis"
+              site="mailto:huskytennis@gmail.com"
               width={205}
             >
               <span
