@@ -45,7 +45,7 @@ class GenericButton extends React.Component<Props> {
         href={this.props.site}
         rel="noopener noreferrer"
         target={
-          this.props.redirect == undefined || this.props.redirect
+          this.props.redirect === undefined || this.props.redirect
             ? "_blank"
             : ""
         }
