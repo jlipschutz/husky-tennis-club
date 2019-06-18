@@ -19,7 +19,7 @@ class Contact extends React.Component<Props> {
         <GenericHeader>Contact Us</GenericHeader>
         <TopHelpSection />
 
-        <GenericFooter color="#144788" bottom={-400} />
+        <GenericFooter color="#144788" bottom={-700} />
       </div>
     );
   }
