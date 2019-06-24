@@ -30,7 +30,8 @@ const BurgerImage = () => (
       <Img
         fluid={data.placeholderImage.childImageSharp.fluid}
         style={{
-          boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.25)"
+          boxShadow: "0px 10px 20px rgba(31, 32, 65, 0.05)",
+          borderRadius: "3px"
         }}
       />
     )}
