@@ -16,19 +16,48 @@ class Events extends React.Component<Props> {
       <div>
         <CustomNavbar selected="events" />
         <GenericHeader>Events</GenericHeader>
-        <EventCard
-          data={{
-            name: "2019 PNW Tennis on Campus Alumni Cup",
-            cityDesc: "University of Washington",
-            registerBy: "3/30/2019",
-            fee: "Free",
-            dateMonth: 4,
-            dateYear: 2019,
-            dateDayStart: 27,
-            dateDayEnd: 29,
-            isTravel: true
-          }}
-        />
+        <div style={{ height: 30 }} />
+        <div class="container">
+          <div class="row" style={{ marginBottom: 5 }}>
+            <div
+              class="col"
+              style={{
+                fontWeight: 600,
+                fontSize: 22,
+                color: "rgba(116,122,255,0.7)"
+              }}
+            >
+              January
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-sm-2 col-12"
+              style={{
+                fontWeight: 100,
+                color: "#2E3168",
+                marginBottom: 5
+              }}
+            >
+              25 - 28
+            </div>
+            <div class="col-sm-10 col-12">
+              <EventCard
+                data={{
+                  name: "2019 PNW Tennis on Campus Alumni Cup",
+                  cityDesc: "University of Washington",
+                  registerBy: "3/30/2019",
+                  fee: "Free",
+                  dateMonth: 4,
+                  dateYear: 2019,
+                  dateDayStart: 27,
+                  dateDayEnd: 29,
+                  isTravel: true
+                }}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
