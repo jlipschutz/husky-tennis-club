@@ -4,6 +4,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import CustomNavbar from "../components/navbar/navbar.react";
 const React = require("react");
+require("../style/event.module.css");
 const GenericHeader = require("../components/GenericHeader.react");
 
 type Props = {};
