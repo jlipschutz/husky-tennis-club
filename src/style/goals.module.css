@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700");
 
 .content {
-  
+
 }
 
 .mission {
@@ -12,13 +12,13 @@
   background: linear-gradient(to bottom, #ffffff 0%, #efe7fd 100%);
 }
 
-.divider {
+/* .divider {
   width: 95%;
   height: 10px;
   margin: 10px auto;
   background: #420dab;
   border-bottom: 5px solid #dab420;
-}
+} */
 .footer {
   position: relative;
   left: 0;

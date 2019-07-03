@@ -9,12 +9,12 @@ class GoalsCompetitiveSection extends React.Component<Props> {
         >
           <div className = "container"
             style = {{
-              paddingHorizontal: "5%",
-              fontSize: 60,
+              padding: "1em",
+              fontSize: "5em"
             }}
           >
             <br />
-            <span style = {{color: "#80e5ff"}}> COMPETITIVE </span> TENNIS
+            <span style = {{color: "#AEDDFD"}}> competitive </span> tennis
             <br />
             <img src={require("../../images/competitive.png")}
               alt = "2018 Nationals Team"
@@ -22,7 +22,7 @@ class GoalsCompetitiveSection extends React.Component<Props> {
               style = {{paddingLeft: "5%", paddingRight: "5%"}}/>
             <div className = "competitiveDescription"
               style = {{
-                fontSize: 20,
+                fontSize: "1em",
                 paddingRight: "5%"
               }}
             >

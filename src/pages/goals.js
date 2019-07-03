@@ -5,6 +5,7 @@ import { GoalsSectionData } from "../components/constants";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import CustomNavbar from "../components/navbar/navbar.react";
+const styles = require("../style/goals.module.css");
 const React = require("react");
 const GoalsMissionStatement = require("../components/goals/GoalsMissionStatement.react");
 const GoalsCompetitiveSection = require("../components/goals/GoalsCompetitive.react");
@@ -24,7 +25,6 @@ class Goals extends React.Component<Props> {
         	<GoalsMissionStatement />
           <GenericGoalsSection goalSection = {GoalsSectionData.competitive} />
           <GenericGoalsSection goalSection = {GoalsSectionData.recreational} />
-          <GenericFooterSection />
         </div>
 
       </div>

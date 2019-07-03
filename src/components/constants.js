@@ -2,6 +2,8 @@
  * @flow strict-local
  */
 import Brandon from "./images/brandon";
+import RecreationalImg from "./images/nationals";
+const React = require('react');
 export type SiteTab = "goals" | "blog" | "events" | "contact" | "register";
 
 export const SiteTabValue = {
@@ -21,18 +23,18 @@ export type GoalSection = {
 
 export const GoalsSectionData = {
   recreational: {
-    title: "Recreational",
-    picture: Brandon,
+    title: "recreational",
+    picture: RecreationalImg,
     description: "We always welcome new players to come " +
     "join us and participate in the Husky fun. During the " +
     "beginning of fall quarter we invite all interested tennis " +
     " players to play tennis and meet our current officers to " +
     "learn more about the club.",
-    titleColor: "#ff8533"
+    titleColor: "#CA9E86"
   },
   competitive: {
-    title: "Competitive",
-    picture: Brandon,
+    title: "competitive",
+    picture: RecreationalImg,
     description: "Throughout the last few years, Husky Tennis "
     +" Club has been competitive in the Pacific Northwest " +
     "Section of USTA's Tennis on Campus program." +
@@ -40,7 +42,7 @@ export const GoalsSectionData = {
     "tournament and have participated in the USTA Tennis on " +
     "Campus Nationals tournament as well. We continue to strive" +
     "to secure a place on the draw at Nationals.",
-    titleColor: "#80e5ff"
+    titleColor: "#AEDDFD"
   }
 
 }
