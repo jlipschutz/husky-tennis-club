@@ -1,7 +1,8 @@
 import Layout from './layout'
-import { graphql} from "gatsby";
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import React from "react"
+
+const {graphql} = require('gatsby');
 
 export default ({data}) => {
     return (
@@ -19,7 +20,7 @@ export default ({data}) => {
     )
 }
 
-export const pageQuery = graphql`query ($postRoute: String!) {
+export const pagequery = graphql`query ($postRoute: String!) {
         mdx(fields: {route: {eq: $postRoute}}){
                 frontmatter{
                     title
