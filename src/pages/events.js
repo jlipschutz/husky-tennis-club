@@ -1,12 +1,16 @@
+
 /*
  * @flow strict-local
  */
 import "bootstrap/dist/css/bootstrap.min.css";
+import Layout from '../components/event/layout';
 import CustomNavbar from "../components/navbar/navbar.react";
-const React = require("react");
+
 require("../style/event.module.css");
-const GenericHeader = require("../components/GenericHeader.react");
 const EventCard = require("../components/event/EventCard.react");
+const GenericHeader = require("../components/GenericHeader.react");
+const React = require("react");
+
 
 type Props = {};
 
@@ -56,6 +60,13 @@ class Events extends React.Component<Props> {
                 }}
               />
             </div>
+            <Layout>
+              <div>
+                <header>
+                  <h2>Lets place video memes here!</h2>
+                </header>
+              </div>
+            </Layout>
           </div>
         </div>
       </div>
@@ -64,3 +75,21 @@ class Events extends React.Component<Props> {
 }
 
 export default Events;
+
+// export const query = graphql`query pagelist{
+//         allmdx(sort: { fields: [frontmatter___date], order: desc }){
+//             edges{
+//                 node{
+//                     fields {
+//                         route
+//                     }
+//                     frontmatter{
+//                         title
+//                         date
+//                     }
+//                     timetoread
+//                     excerpt
+//                 }
+//             }
+//         }
+//     }`
