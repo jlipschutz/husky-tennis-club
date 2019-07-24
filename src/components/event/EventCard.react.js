@@ -4,7 +4,7 @@
 
 import type { EventType } from "./EventType";
 const React = require("react");
-const stylesContact = require("../../style/contact.module.css");
+const stylesContact = require("../../style/event.module.css");
 
 type Props = {
   data: EventType

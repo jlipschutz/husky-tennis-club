@@ -3,7 +3,6 @@
  * @flow strict-local
  */
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import Layout from '../components/event/layout';
 import CustomNavbar from "../components/navbar/navbar.react";
 
@@ -28,7 +27,7 @@ class Events extends React.Component<Props> {
             <div
               class="col"
               style={{
-                fontWeight: 600,
+                fontWeight:600, 
                 fontSize: 22,
                 color: "rgba(116,122,255,0.7)"
               }}
