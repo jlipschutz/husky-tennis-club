@@ -21,7 +21,7 @@ class GenericQAComponent extends React.Component<Props> {
               paddingTop: 30,
               paddingBottom: 10,
               textAlign: "center",
-              color: "#6FCF97",
+              color: this.props.data.isTravel ? "#6FCF97" : "#CF6F6F",
               fontSize: 20
             }}
           >
