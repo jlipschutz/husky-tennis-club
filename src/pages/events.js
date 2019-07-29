@@ -1,4 +1,6 @@
-
+/*
+ * @flow strict-local
+ */
 import "bootstrap/dist/css/bootstrap.min.css";
 import CustomNavbar from "../components/navbar/navbar.react";
 
@@ -8,9 +10,6 @@ const GenericHeader = require("../components/GenericHeader.react");
 const {Link, graphql} = require('gatsby');
 const React = require("react");
 
-/*
- * @flow strict-local
- */
 
 const months = [
   'January',
@@ -38,8 +37,6 @@ export default({data}: any) => {
       <div style={{ height: 30 }} />
       <div className="container">
         {posts.map(({node}, index)=> {
-
-          console.log(node.frontmatter);
           var diff = prevMonth !== node.frontmatter.dateMonth;
           prevMonth = node.frontmatter.dateMonth;
           return (
@@ -54,7 +51,7 @@ export default({data}: any) => {
                           color: "rgba(116,122,255,0.7)"
                         }}
                       >
-                        {months[node.frontmatter.dateMonth - 1] + ', ' + node.frontmatter.dateYear}
+                        {months[node.frontmatter.dateMonth - 1]}
                       </div>
                     </div>
                   : ''
@@ -69,7 +66,7 @@ export default({data}: any) => {
                       marginBottom: 5
                     }}
                   >
-                    {node.frontmatter.dateDayStart} {node.frontmatter.dateDayEnd != node.frontmatter.dateDayStart ? ' - ' + node.frontmatter.dateDayEnd : ''}
+                    {node.frontmatter.dateDayStart} {node.frontmatter.dateDayEnd !== node.frontmatter.dateDayStart ? ' - ' + node.frontmatter.dateDayEnd : ''}
                 </div>
                 <div className="col-sm-10 col-12">
                   <Link to={node.fields.route} style={{textDecoration:'none', color:  'inherit'}} key={index}>
