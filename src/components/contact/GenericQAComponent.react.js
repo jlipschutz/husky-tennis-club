@@ -2,10 +2,11 @@
  * @flow strict-local
  */
 
-import type { QAType } from "./QAData";
-const React = require("react");
+import type {QAType} from "./QAData";
+
 const stylesContact = require("../../style/contact.module.css");
-const { IoIosArrowDown } = require("react-icons/io");
+const React = require("react");
+const {IoIosArrowDown} = require("react-icons/io");
 
 type Props = {
   data: QAType
