@@ -1,16 +1,14 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "husky-tennis-club",
+  "description": "Husky Tennis Club",
+  "version": "0.1.0",
+  "author": "Kevin Kang <kevinkang06@gmail.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.1.0",
     "@mdx-js/react": "^1.0.27",
     "@mdx-js/tag": "^0.20.3",
     "bootstrap": "^4.2.1",
     "change-case": "^3.1.0",
-    "cloudinary-core": "^2.6.3",
-    "cloudinary-video-player": "^1.2.1",
     "gatsby": "^2.1.17",
     "gatsby-image": "^2.0.20",
     "gatsby-mdx": "^0.6.3",
@@ -30,7 +28,6 @@
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.5.0",
-    "react-map-gl": "^5.0.7",
     "react-typography": "^0.16.19",
     "reactstrap": "^6.5.0",
     "typescript": "^3.5.3",
@@ -55,6 +52,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/kevink97/husky-tennis-club"
   }
 }

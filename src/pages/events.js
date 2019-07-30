@@ -9,6 +9,7 @@ const EventCard = require("../components/event/EventCard.react");
 const GenericHeader = require("../components/GenericHeader.react");
 const {Link, graphql} = require('gatsby');
 const React = require("react");
+const GenericFooter = require("../components/GenericFooter.react");
 
 
 const months = [
@@ -89,6 +90,7 @@ export default({data}: any) => {
             </div>
           )})}
       </div>
+      <GenericFooter color="#144788" />
     </div>
   );
 };
