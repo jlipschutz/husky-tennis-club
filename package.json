@@ -4,8 +4,10 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@material-ui/core": "^4.3.1",
     "bootstrap": "^4.2.1",
     "gatsby": "^2.1.17",
+    "gatsby-cli": "^2.7.28",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-flow": "^1.0.2",
     "gatsby-plugin-manifest": "^2.0.9",
@@ -17,8 +19,8 @@
     "jquery": "^3.3.1",
     "popper.js": "^1.14.6",
     "prop-types": "^15.6.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.5.0",
     "reactstrap": "^6.5.0"
@@ -42,5 +44,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "resolutions": {
+    "graphql": "version"
   }
 }
