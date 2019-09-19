@@ -48,7 +48,11 @@ export default function GenericBlogCard(props) {
             </CardContent>
           </CardActionArea>
           <CardActions>
+<<<<<<< HEAD
             <div className={classes.actions}>
+=======
+            <div>
+>>>>>>> cards working w/ pictures, start using props
               {props.blogSectionData.date}
             </div>
             {props.blogSectionData.linkAvailable &&
