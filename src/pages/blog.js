@@ -17,7 +17,19 @@ class Blog extends React.Component<Props> {
       <div>
         <CustomNavbar selected="blog" />
         <GenericHeader>Blog</GenericHeader>
-        <GenericBlogCard />
+        <div className = "row d-flex justify-content-start">
+          <div className="col-4 col-mid-3">
+            <GenericBlogCard blogSectionData = {BlogSectionData.fallPractice}/>
+          </div>
+          <div className="col-4 col-mid-3">
+            <GenericBlogCard blogSectionData = {BlogSectionData.freshmenPractice}/>
+          </div>
+          <div className="col-4 col-mid-3">
+            <GenericBlogCard blogSectionData = {BlogSectionData.osuTournament}/>
+          </div>
+        </div>
+
+
       </div>
     );
   }
