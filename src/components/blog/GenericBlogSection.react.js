@@ -6,7 +6,6 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 
@@ -22,7 +21,7 @@ const useStyles = makeStyles({
     height: 140,
   },
   actions: {
-    marginRight: 30,
+    marginRight: 15,
   },
 });
 
@@ -48,8 +47,8 @@ export default function GenericBlogCard(props) {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <div className={classes.actions}>
             <div>
+            <div className = {classes.actions}>
               {props.blogSectionData.date}
             </div>
             {props.blogSectionData.linkAvailable &&
@@ -63,8 +62,3 @@ export default function GenericBlogCard(props) {
       </div>
     );
 }
-/*
-<Button size="small" color="primary" href={props.blogSectionData.link}>
-  Learn More
-</Button>
-*/
