@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap");
+
+.card-style {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  margin-bottom: 25px;
+  font-family: Quicksand;
+}
+
+body {
+  background-color: #faf9fa;
+}

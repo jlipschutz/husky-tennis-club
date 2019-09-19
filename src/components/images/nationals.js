@@ -29,7 +29,10 @@ const NationalsImage = () => (
     render={data => (
       <Img
         fluid={data.placeholderImage.childImageSharp.fluid}
-        style={{ boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.25)" }}
+        style={{
+          boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.25)",
+          borderRadius: "3px"
+        }}
       />
     )}
   />

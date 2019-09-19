@@ -9,7 +9,8 @@ type Props = {
   site: string,
   marginLeft?: number,
   width?: number,
-  children?: React.Node
+  children?: React.Node,
+  redirect?: boolean
 };
 
 function SolidButton(props: {
@@ -25,7 +26,7 @@ function SolidButton(props: {
         borderRadius: "20px",
         color: "rgba(255,255,255,0.8)",
         borderStyle: "none",
-        fontSize: 10,
+        fontSize: 11,
         fontWeight: "bold",
         fontFamily: '"Montserrat"',
         marginLeft: props.marginLeft !== null ? props.marginLeft : 0,
@@ -40,7 +41,15 @@ function SolidButton(props: {
 class GenericButton extends React.Component<Props> {
   render(): React.Node {
     return (
-      <a href={this.props.site} rel="noopener noreferrer" target="_blank">
+      <a
+        href={this.props.site}
+        rel="noopener noreferrer"
+        target={
+          this.props.redirect === undefined || this.props.redirect
+            ? "_blank"
+            : ""
+        }
+      >
         <SolidButton
           marginLeft={this.props.marginLeft}
           width={this.props.width}
