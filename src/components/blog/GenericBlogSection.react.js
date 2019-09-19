@@ -21,6 +21,9 @@ const useStyles = makeStyles({
   media: {
     height: 140,
   },
+  actions: {
+    marginRight: 30,
+  },
 });
 
 
@@ -45,7 +48,7 @@ export default function GenericBlogCard(props) {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <div>
+            <div className={classes.actions}>
               {props.blogSectionData.date}
             </div>
             {props.blogSectionData.linkAvailable &&
