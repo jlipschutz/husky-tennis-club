@@ -94,7 +94,7 @@ class CustomNavbar extends React.Component<Props, State> {
             <CustomNavItem selected={this.props.selected} siteTab="blog" />
             <CustomNavItem selected={this.props.selected} siteTab="events" />
             <CustomNavItem selected={this.props.selected} siteTab="contact" />
-            <CustomNavItem selected={this.props.selected} siteTab="register" />
+            {/*<CustomNavItem selected={this.props.selected} siteTab="register" /> */}
           </Nav>
         </Collapse>
       </Navbar>

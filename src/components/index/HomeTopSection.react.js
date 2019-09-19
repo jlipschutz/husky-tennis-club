@@ -49,15 +49,16 @@ class HomeSectionGeneric extends React.Component<Props> {
           </div>
           <div className="row justify-content-start" style={{ marginTop: 20 }}>
             <div className="col-sm-8">
-              <GenericButton siteTab="register" color="rgba(70, 78, 255)">
+              {/*<GenericButton siteTab="register" color="rgba(70, 78, 255)">
                 Register
               </GenericButton>
+              */}
               <GenericButton
                 siteTab="goals"
                 color="rgba(70, 78, 255)"
-                transparent={true}
-                marginLeft={29}
               >
+                {/*transparent={true}
+                marginLeft={29} */}
                 Learn More
               </GenericButton>
             </div>

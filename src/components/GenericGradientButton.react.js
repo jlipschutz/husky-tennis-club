@@ -26,7 +26,7 @@ function SolidButton(props: {
         borderRadius: "20px",
         color: "rgba(255,255,255,0.8)",
         borderStyle: "none",
-        fontSize: 10,
+        fontSize: 11,
         fontWeight: "bold",
         fontFamily: '"Montserrat"',
         marginLeft: props.marginLeft !== null ? props.marginLeft : 0,
