@@ -2,8 +2,10 @@
  * @flow strict-local
  */
 import Brandon from "./images/brandon";
-import RecreationalImg from "./images/nationals";
+import CompetitiveImg from "./images/nationals";
+import CourtImg from "./images/burgers";
 const React = require('react');
+const recreational = require("../images/recreational.jpg");
 export type SiteTab = "goals" | "blog" | "events" | "contact" | "register";
 
 export const SiteTabValue = {
@@ -24,7 +26,7 @@ export type GoalSection = {
 export const GoalsSectionData = {
   recreational: {
     title: "recreational",
-    picture: RecreationalImg,
+    picture: CourtImg,
     description: "We always welcome new players to come " +
     "join us and participate in the Husky fun. During the " +
     "beginning of fall quarter we invite all interested tennis " +
@@ -34,7 +36,7 @@ export const GoalsSectionData = {
   },
   competitive: {
     title: "competitive",
-    picture: RecreationalImg,
+    picture: CompetitiveImg,
     description: "Throughout the last few years, Husky Tennis "
     +" Club has been competitive in the Pacific Northwest " +
     "Section of USTA's Tennis on Campus program." +
