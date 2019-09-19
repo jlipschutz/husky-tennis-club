@@ -34,12 +34,8 @@ export const BlogSectionData = {
   freshmenPractice: {
     title: "New Member Practice",
     description: "We run one practice before school starts to let new members " +
-<<<<<<< HEAD
                   "learn more about the club and meet new friends to hit with." +
                   "This practice will be from 4:00pm-7:00pm.",
-=======
-                  "learn more about the club and meet new friends to hit with.",
->>>>>>> cards working w/ pictures, start using props
     image: "../../images/tenniscourt.jpg",
     imageTitle: "IMA Courts",
     date: "September 23rd",
@@ -54,11 +50,7 @@ export const BlogSectionData = {
     image: "../../images/tenniscourt.jpg",
     imageTitle: "IMA Courts",
     date: "October 18th - 20th",
-<<<<<<< HEAD
     link: "http://bit.ly/OSUFallTournament",
-=======
-    link: "bit.ly/OSUFallTournament",
->>>>>>> cards working w/ pictures, start using props
     linkAvailable: true
   }
 
