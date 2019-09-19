@@ -52,7 +52,7 @@ export default function GenericBlogCard(props) {
               {props.blogSectionData.date}
             </div>
             {props.blogSectionData.linkAvailable &&
-              <Link href={props.blogSectionData.link}>
+              <Link href={props.blogSectionData.link} target="_blank">
                 Learn More
               </Link>
             }
