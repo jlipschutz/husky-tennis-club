@@ -46,14 +46,15 @@ export const GoalsSectionData = {
     "Campus Nationals tournament as well. We continue to strive" +
     "to secure a place on the draw at Nationals.",
     titleColor: "#AEDDFD"
-}
+  }
+};
 
 export type BlogSection = {
   title: string,
   description: string,
   image: string,
   imageTitle: string
-}
+};
 
 export const BlogSectionData = {
   fallPractice: {
