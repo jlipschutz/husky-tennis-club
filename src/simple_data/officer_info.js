@@ -6,7 +6,13 @@ export type OfficerId =
   | "Kevin"
   | "Megan"
   | "Maddie"
-  | "Boris";
+  | "Boris"
+  | "Jeremy"
+  | "Kimmy"
+  | "Matt"
+  | "Samantha"
+  | "Chris"
+  | "Yodae";
 
 export type Officer = {
   name: String,
@@ -44,6 +50,36 @@ const OfficerData = {
     name: "Boris Baura",
     position: "Photographer",
     label: "Senior, Math"
+  },
+  Jeremy: {
+    name: "Jeremy Lipschutz",
+    position: "President",
+    label: "Junior, Computer Science"
+  },
+  Kimmy: {
+    name: "Kimmy Lum",
+    position: "Vice President",
+    label: "Senior, Nutrition"
+  },
+  Matt: {
+    name: "Matt Cao",
+    position: "Treasurer",
+    label: "Senior, Sociology"
+  },
+  Sam: {
+    name: "Samantha Merrill",
+    position: "Fundraising Chair",
+    label: "Sophomore, Mathematics"
+  },
+  Chris: {
+    name: "Chris Wu",
+    position: "Photographer",
+    label: "Junior, MCD Biology"
+  },
+  Yodae: {
+    name: "Yodae Lim",
+    position: "Membership Chair",
+    label: "Senior, Informatics"
   }
 };
 
