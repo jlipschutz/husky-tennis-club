@@ -10,6 +10,9 @@ import Boris from "../../components/images/boris";
 import Jeremy from "../../components/images/jeremy";
 import Kimmy from "../../components/images/kimmy";
 import Samantha from "../../components/images/samantha";
+import Chris from "../../components/images/chris";
+import Matt from "../../components/images/matt";
+import Yodae from "../../components/images/yodae";
 const style = require("../../style/index.module.css");
 const React = require("react");
 const GenericButton = require("../index/GenericButton.react");
@@ -83,8 +86,8 @@ class OfficerSection extends React.Component<Props> {
           </div>
           <div className="row d-flex justify-content-start">
             <div className="col-6 col-md-3">
-              <OfficerProfile id="Kevin">
-                <Kevin />
+              <OfficerProfile id="Matt">
+                <Matt />
               </OfficerProfile>
             </div>
             <div className="col-6 col-md-3">
@@ -93,13 +96,13 @@ class OfficerSection extends React.Component<Props> {
               </OfficerProfile>
             </div>
             <div className="col-6 col-md-3">
-              <OfficerProfile id="Maddie">
-                <Maddie />
+              <OfficerProfile id="Yodae">
+                <Yodae />
               </OfficerProfile>
             </div>
             <div className="col-6 col-md-3">
-              <OfficerProfile id="Boris">
-                <Boris />
+              <OfficerProfile id="Chris">
+                <Chris />
               </OfficerProfile>
             </div>
           </div>
