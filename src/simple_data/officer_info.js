@@ -66,7 +66,7 @@ const OfficerData = {
     position: "Treasurer",
     label: "Senior, Sociology"
   },
-  Sam: {
+  Samantha: {
     name: "Samantha Merrill",
     position: "Fundraising Chair",
     label: "Sophomore, Mathematics"

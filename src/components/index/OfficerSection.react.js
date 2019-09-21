@@ -9,6 +9,7 @@ import Megan from "../../components/images/megan";
 import Boris from "../../components/images/boris";
 import Jeremy from "../../components/images/jeremy";
 import Kimmy from "../../components/images/kimmy";
+import Samantha from "../../components/images/samantha";
 const style = require("../../style/index.module.css");
 const React = require("react");
 const GenericButton = require("../index/GenericButton.react");
@@ -87,8 +88,8 @@ class OfficerSection extends React.Component<Props> {
               </OfficerProfile>
             </div>
             <div className="col-6 col-md-3">
-              <OfficerProfile id="Megan">
-                <Megan />
+              <OfficerProfile id="Samantha">
+                <Samantha />
               </OfficerProfile>
             </div>
             <div className="col-6 col-md-3">
