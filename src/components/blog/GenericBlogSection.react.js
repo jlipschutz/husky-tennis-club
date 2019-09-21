@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 
 const tennisCourt = require("../../images/tenniscourt.jpg");
 
@@ -30,35 +31,37 @@ export default function GenericBlogCard(props) {
     const classes = useStyles();
     return (
       <div>
-        <Card className={classes.card}>
-          <CardActionArea>
-            <CardMedia
-              className={classes.media}
-              image= {tennisCourt}
-              title={props.blogSectionData.imageTitle}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                {props.blogSectionData.title}
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                {props.blogSectionData.description}
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions>
-            <div>
-            <div className = {classes.actions}>
-              {props.blogSectionData.date}
-            </div>
-            {props.blogSectionData.linkAvailable &&
-              <Link href={props.blogSectionData.link} target="_blank">
-                Learn More
-              </Link>
-            }
-            </div>
-          </CardActions>
-        </Card>
+        <Grid item xs>
+          <Card className={classes.card}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image= {tennisCourt}
+                title={props.blogSectionData.imageTitle}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  {props.blogSectionData.title}
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  {props.blogSectionData.description}
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <div>
+              <div className = {classes.actions}>
+                {props.blogSectionData.date}
+              </div>
+              {props.blogSectionData.linkAvailable &&
+                <Link href={props.blogSectionData.link} target="_blank">
+                  Learn More
+                </Link>
+              }
+              </div>
+            </CardActions>
+          </Card>
+        </Grid>
       </div>
     );
 }

@@ -4,7 +4,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import CustomNavbar from "../components/navbar/navbar.react";
 import { BlogSectionData } from "../components/constants";
+import { makeStyles } from "@material-ui/core/styles";
 import GenericBlogCard from "../components/blog/GenericBlogSection.react";
+import Grid from "@material-ui/core/Grid";
+const style = require("../style/blogs.module.css");
 
 const React = require("react");
 const GenericHeader = require("../components/GenericHeader.react");
@@ -17,19 +20,13 @@ class Blog extends React.Component<Props> {
       <div>
         <CustomNavbar selected="blog" />
         <GenericHeader>Blog</GenericHeader>
-        <div className = "row d-flex justify-content-start">
-          <div className="col-4 col-mid-3">
+        <div className={style.flexGrow}>
+          <Grid container spacing = {4}>
             <GenericBlogCard blogSectionData = {BlogSectionData.fallPractice}/>
-          </div>
-          <div className="col-4 col-mid-3">
             <GenericBlogCard blogSectionData = {BlogSectionData.freshmenPractice}/>
-          </div>
-          <div className="col-4 col-mid-3">
             <GenericBlogCard blogSectionData = {BlogSectionData.osuTournament}/>
-          </div>
+          </Grid>
         </div>
-
-
       </div>
     );
   }
