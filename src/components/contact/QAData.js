@@ -43,9 +43,9 @@ export const QAData = {
       )
     },
     {
-      question: "I want to play tennis! But I never touched a racquet before!",
+      question: "I want to play tennis! But I never have touched a racquet before!",
       answer: (
-        <span>Don't worry! We welcome players from all skill level! </span>
+        <span>Don't worry! We welcome players from all skill levels! </span>
       )
     }
   ]

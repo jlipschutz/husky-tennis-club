@@ -44,7 +44,7 @@ class OfficerSection extends React.Component<Props> {
                 marginBottom: 25
               }}
             >
-              We make <br /> this all possible
+              Meet our officers
             </div>
             <div
               className="col-md-6 d-flex align-items-center justify-content-md-end"

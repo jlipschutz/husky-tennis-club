@@ -21,10 +21,18 @@ class Blog extends React.Component<Props> {
         <CustomNavbar selected="blog" />
         <GenericHeader>Blog</GenericHeader>
         <div className={style.flexGrow}>
-          <Grid container spacing = {4}>
-            <GenericBlogCard blogSectionData = {BlogSectionData.fallPractice}/>
-            <GenericBlogCard blogSectionData = {BlogSectionData.freshmenPractice}/>
-            <GenericBlogCard blogSectionData = {BlogSectionData.osuTournament}/>
+          <Grid container
+                direction="row"
+                justify="space-evenly">
+              <Grid item xs = {12} md = {3}>
+                <GenericBlogCard blogSectionData = {BlogSectionData.fallPractice}/>
+              </Grid>
+              <Grid item xs = {12} md = {3}>
+                <GenericBlogCard blogSectionData = {BlogSectionData.freshmenPractice}/>
+              </Grid>
+              <Grid item xs = {12} md = {3}>
+                <GenericBlogCard blogSectionData = {BlogSectionData.osuTournament}/>
+              </Grid>
           </Grid>
         </div>
       </div>

@@ -11,12 +11,12 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
 const tennisCourt = require("../../images/tenniscourt.jpg");
+const style = require("../../style/blogs.module.css");
+
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 345,
     marginTop: 50,
-    marginLeft: "7%",
   },
   media: {
     height: 140,
@@ -30,8 +30,7 @@ const useStyles = makeStyles({
 export default function GenericBlogCard(props) {
     const classes = useStyles();
     return (
-      <div>
-        <Grid item xs>
+      <div className={style.flexGrow}>
           <Card className={classes.card}>
             <CardActionArea>
               <CardMedia
@@ -61,7 +60,6 @@ export default function GenericBlogCard(props) {
               </div>
             </CardActions>
           </Card>
-        </Grid>
       </div>
     );
 }

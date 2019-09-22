@@ -44,7 +44,7 @@ class HomeSectionGeneric extends React.Component<Props> {
           <div className="row justify-content-start">
             <div className="col-md-8 col-lg-6" style={{ marginTop: 15 }}>
               Members get opportunities to tryout and attend tourneys against
-              other University through the USTA Tennis on Campus program.
+              other universities through the USTA Tennis on Campus program.
             </div>
           </div>
           <div className="row justify-content-start" style={{ marginTop: 20 }}>
