@@ -24,13 +24,13 @@ class Blog extends React.Component<Props> {
           <Grid container
                 direction="row"
                 justify="space-evenly">
-              <Grid item xs = {12} md = {3}>
+              <Grid item xs = {12} sm = {3}>
                 <GenericBlogCard blogSectionData = {BlogSectionData.fallPractice}/>
               </Grid>
-              <Grid item xs = {12} md = {3}>
+              <Grid item xs = {12} sm = {3}>
                 <GenericBlogCard blogSectionData = {BlogSectionData.freshmenPractice}/>
               </Grid>
-              <Grid item xs = {12} md = {3}>
+              <Grid item xs = {12} sm = {3}>
                 <GenericBlogCard blogSectionData = {BlogSectionData.osuTournament}/>
               </Grid>
           </Grid>
