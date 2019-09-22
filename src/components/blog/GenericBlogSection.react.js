@@ -32,7 +32,7 @@ export default function GenericBlogCard(props) {
     return (
       <div className={style.flexGrow}>
           <Card className={classes.card}>
-            <CardActionArea>
+            <CardContent>
               <CardMedia
                 className={classes.media}
                 image= {tennisCourt}
@@ -46,7 +46,7 @@ export default function GenericBlogCard(props) {
                   {props.blogSectionData.description}
                 </Typography>
               </CardContent>
-            </CardActionArea>
+            </CardContent>
             <CardActions>
               <div>
               <div className = {classes.actions}>
