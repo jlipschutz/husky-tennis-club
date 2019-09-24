@@ -40,10 +40,10 @@ export const GoalsSectionData = {
     picture: CompetitiveImg,
     description: "Throughout the last few years, Husky Tennis "
     +" Club has been competitive in the Pacific Northwest " +
-    "Section of USTA's Tennis on Campus program." +
-    "We have placed as finalists in the Pacific Northwest Sectionals" +
+    "Section of USTA's Tennis on Campus program. " +
+    "We have placed as finalists in the Pacific Northwest Sectionals " +
     "tournament and have participated in the USTA Tennis on " +
-    "Campus Nationals tournament as well. We continue to strive" +
+    "Campus Nationals tournament as well. We continue to strive " +
     "to secure a place on the draw at Nationals.",
     titleColor: "#AEDDFD"
   }
