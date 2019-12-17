@@ -40,10 +40,10 @@ export const GoalsSectionData = {
     picture: CompetitiveImg,
     description: "Throughout the last few years, Husky Tennis "
     +" Club has been competitive in the Pacific Northwest " +
-    "Section of USTA's Tennis on Campus program." +
-    "We have placed as finalists in the Pacific Northwest Sectionals" +
+    "Section of USTA's Tennis on Campus program. " +
+    "We have placed as finalists in the Pacific Northwest Sectionals " +
     "tournament and have participated in the USTA Tennis on " +
-    "Campus Nationals tournament as well. We continue to strive" +
+    "Campus Nationals tournament as well. We continue to strive " +
     "to secure a place on the draw at Nationals.",
     titleColor: "#AEDDFD"
   }
@@ -88,6 +88,42 @@ export const BlogSectionData = {
     imageTitle: "IMA Courts",
     date: "October 18th - 20th",
     link: "http://bit.ly/OSUFallTournament",
+    linkAvailable: true
+  },
+
+  winterPractice: {
+    title: "HTC Winter Practice 2019",
+    description: "Practices will be held Monday, Wednesday, and Thursday. Monday " +
+                 "practices will be held at the Nordstrom Tennis Center from 8:30pm-10:00pm. " +
+                 "Wednesday and Thursday practices will be held from 5:00pm-8:00pm " +
+                 "at the South IMA Courts.",
+    image: "../../images/tenniscourt.jpg",
+    imageTitle: "IMA Courts",
+    date: "January 6th - March 13th",
+    link: "n/a",
+    linkAvailable: false
+  },
+
+  womenTennisTeam: {
+    title: "Women's Club Team Clinic",
+    description: "Come meet the Women's D1 Tennis Team at the Nordstrom Tennis Center " +
+                  "and learn about opportunites to support the Women's team! See their " +
+                  "schedule in the link below.",
+    image: "../../images/tenniscourt.jpg",
+    imageTitle: "IMA Courts",
+    date: "January 8th",
+    link: "https://gohuskies.com/schedule.aspx?path=wten",
+    linkAvailable: true
+  },
+
+  uvicTournament: {
+    title: "UVIC Winter Invitational",
+    description: "Tryout for our competitive team that travels across the PNW " +
+                  "and play against other college club teams!",
+    image: "../../images/tenniscourt.jpg",
+    imageTitle: "IMA Courts",
+    date: "January 17th - 19th",
+    link: "http://bit.ly/UVICTournament",
     linkAvailable: true
   }
 

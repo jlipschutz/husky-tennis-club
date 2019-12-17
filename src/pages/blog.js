@@ -11,6 +11,7 @@ const style = require("../style/blogs.module.css");
 
 const React = require("react");
 const GenericHeader = require("../components/GenericHeader.react");
+const GenericFooter = require("../components/GenericFooter.react");
 
 type Props = {};
 
@@ -24,17 +25,18 @@ class Blog extends React.Component<Props> {
           <Grid container
                 direction="row"
                 justify="space-evenly">
-              <Grid item xs = {12} sm = {3}>
-                <GenericBlogCard blogSectionData = {BlogSectionData.fallPractice}/>
+              <Grid item xs = {12} sm = {6} md = {3}>
+                <GenericBlogCard blogSectionData = {BlogSectionData.winterPractice}/>
               </Grid>
-              <Grid item xs = {12} sm = {3}>
-                <GenericBlogCard blogSectionData = {BlogSectionData.freshmenPractice}/>
+              <Grid item xs = {12} sm = {6} md = {3}>
+                <GenericBlogCard blogSectionData = {BlogSectionData.womenTennisTeam}/>
               </Grid>
-              <Grid item xs = {12} sm = {3}>
-                <GenericBlogCard blogSectionData = {BlogSectionData.osuTournament}/>
+              <Grid item xs = {12} sm = {6} md = {3}>
+                <GenericBlogCard blogSectionData = {BlogSectionData.uvicTournament}/>
               </Grid>
           </Grid>
         </div>
+        <GenericFooter color="#144788" />
       </div>
     );
   }

@@ -12,6 +12,7 @@ const GoalsCompetitiveSection = require("../components/goals/GoalsCompetitive.re
 const GoalsRecreationalSection = require("../components/goals/GoalsRecreational.react");
 const GenericFooterSection = require("../components/GenericFooter.react.js");
 const GenericGoalsSection = require("../components/goals/GenericGoalsSection.react");
+const GenericFooter = require("../components/GenericFooter.react");
 
 type Props = {};
 
@@ -26,7 +27,7 @@ class Goals extends React.Component<Props> {
           <GenericGoalsSection goalSection = {GoalsSectionData.competitive} />
           <GenericGoalsSection goalSection = {GoalsSectionData.recreational} />
         </div>
-
+        <GenericFooter color="#144788" />
       </div>
     );
   }
