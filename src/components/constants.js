@@ -1,11 +1,9 @@
 /*
  * @flow strict-local
  */
-import Brandon from "./images/brandon";
 import CompetitiveImg from "./images/nationals";
 import CourtImg from "./images/burgers";
 const React = require('react');
-const recreational = require("../images/recreational.jpg");
 export type SiteTab = "goals" | "blog" | "events" | "contact" | "register";
 
 export const SiteTabValue = {
@@ -92,7 +90,7 @@ export const BlogSectionData = {
   },
 
   winterPractice: {
-    title: "HTC Winter Practice 2019",
+    title: "HTC Winter Practice 2020",
     description: "Practices will be held Monday, Wednesday, and Thursday. Monday " +
                  "practices will be held at the Nordstrom Tennis Center from 8:30pm-10:00pm. " +
                  "Wednesday and Thursday practices will be held from 5:00pm-8:00pm " +
@@ -120,11 +118,23 @@ export const BlogSectionData = {
     title: "UVIC Winter Invitational",
     description: "Tryout for our competitive team that travels across the PNW " +
                   "and play against other college club teams!",
-    image: "../../images/tenniscourt.jpg",
-    imageTitle: "IMA Courts",
+    image: "../../images/canada.jpg",
+    imageTitle: "Canada",
     date: "January 17th - 19th",
     link: "http://bit.ly/UVICTournament",
     linkAvailable: true
+  },
+
+  yakimaTournament: {
+    title: "Yakima Winter Tournament",
+    description: "Tryout to participate in Gonzaga's hosted Winter Tournament " +
+                 " in Yakima and play against other college club teams!",
+    image: "../../images/tenniscourt.jpg",
+    imageTitle: "Gonzaga",
+    date: "Date TBD",
+    link: "put link once date confirmed",
+    linkAvailable: false,
   }
+
 
 }

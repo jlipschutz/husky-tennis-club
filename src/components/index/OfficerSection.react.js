@@ -1,12 +1,14 @@
 /*
  * @flow strict-local
  */
+ /*
 import Kevin from "../../components/images/kevin";
 import Brandon from "../../components/images/brandon";
 import Brian from "../../components/images/brian";
 import Maddie from "../../components/images/maddie";
 import Megan from "../../components/images/megan";
 import Boris from "../../components/images/boris";
+*/
 import Jeremy from "../../components/images/jeremy";
 import Kimmy from "../../components/images/kimmy";
 import Samantha from "../../components/images/samantha";

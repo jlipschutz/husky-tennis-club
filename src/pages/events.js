@@ -96,7 +96,7 @@ export default({data}: any) => {
 };
 
 export const query = graphql`query PageList{
-        allMdx(sort: { fields: [frontmatter___date], order: ASC }){
+        allMdx(sort: { fields: [frontmatter___date], order: DESC }){
             edges{
                 node{
                     fields {

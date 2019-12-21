@@ -27,7 +27,8 @@ exports.createPages = ({ graphql, actions }) => {
     resolve(
       graphql(
         `{
-            allMdx {
+            allMdx
+            {
                 edges {
                     node {
                         fields {

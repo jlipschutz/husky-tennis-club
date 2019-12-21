@@ -1,6 +1,5 @@
 import type { GoalSection } from "../constants";
 
-const style = require("../../style/goals.module.css")
 const React = require("react");
 
 type Props = {
