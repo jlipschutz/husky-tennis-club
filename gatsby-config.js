@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Husky Tennis Club",
     description: "Husky Tennis Club @ University of Washington",
-    author: "Kevin Kang"
+    author: "Kevin Kang & Jeremy Lipschutz"
   },
   pathPrefix: "/husky-tennis-club",
   plugins: [

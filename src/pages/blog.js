@@ -4,7 +4,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import CustomNavbar from "../components/navbar/navbar.react";
 import { BlogSectionData } from "../components/constants";
-import { makeStyles } from "@material-ui/core/styles";
 import GenericBlogCard from "../components/blog/GenericBlogSection.react";
 import Grid from "@material-ui/core/Grid";
 const style = require("../style/blogs.module.css");
@@ -24,7 +23,7 @@ class Blog extends React.Component<Props> {
         <div className={style.flexGrow}>
           <Grid container
                 direction="row"
-                justify="space-evenly">
+                justify="space-around">
               <Grid item xs = {12} sm = {6} md = {3}>
                 <GenericBlogCard blogSectionData = {BlogSectionData.winterPractice}/>
               </Grid>
@@ -35,8 +34,15 @@ class Blog extends React.Component<Props> {
                 <GenericBlogCard blogSectionData = {BlogSectionData.uvicTournament}/>
               </Grid>
           </Grid>
+          <Grid container
+                direction="row"
+                justify="space-around">
+              <Grid item xs = {12} sm = {6} md = {3}>
+                <GenericBlogCard blogSectionData = {BlogSectionData.yakimaTournament}/>
+              </Grid>
+          </Grid>
         </div>
-        <GenericFooter color="#144788" />
+        <GenericFooter color="#144788"/>
       </div>
     );
   }

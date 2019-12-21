@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
+
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -11,12 +12,15 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
 const tennisCourt = require("../../images/tenniscourt.jpg");
+const canada = require("../../images/canada.jpg");
+const gonzaga = require("../../images/gonzaga.png");
 const style = require("../../style/blogs.module.css");
 
 
 const useStyles = makeStyles({
   card: {
     marginTop: 50,
+    height: "50%",
   },
   media: {
     height: 140,
@@ -24,18 +28,35 @@ const useStyles = makeStyles({
   actions: {
     marginRight: 15,
   },
+  content: {
+    marginBottom: 0,
+    height: 200,
+  }
 });
 
 
 export default function GenericBlogCard(props) {
     const classes = useStyles();
+    let customImg = tennisCourt;
+    switch(props.blogSectionData.imageTitle) {
+      case "IMA Courts":
+        customImg = tennisCourt;
+        break;
+      case "Canada":
+        customImg = canada;
+        break;
+      case "Gonzaga":
+        customImg = gonzaga;
+        break;
+      default:
+        customImg = tennisCourt;
+    }
     return (
       <div className={style.flexGrow}>
           <Card className={classes.card}>
-            <CardContent>
               <CardMedia
                 className={classes.media}
-                image= {tennisCourt}
+                image={customImg}
                 title={props.blogSectionData.imageTitle}
               />
               <CardContent>
@@ -46,7 +67,6 @@ export default function GenericBlogCard(props) {
                   {props.blogSectionData.description}
                 </Typography>
               </CardContent>
-            </CardContent>
             <CardActions>
               <div>
               <div className = {classes.actions}>
