@@ -109,7 +109,7 @@ export const BlogSectionData = {
                   "schedule in the link below.",
     image: "../../images/tenniscourt.jpg",
     imageTitle: "IMA Courts",
-    date: "January 8th",
+    date: "January 8th 5:30-7:00pm",
     link: "https://gohuskies.com/schedule.aspx?path=wten",
     linkAvailable: true
   },
