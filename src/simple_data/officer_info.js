@@ -52,7 +52,7 @@ const OfficerData = {
     label: "Senior, Math"
   },
   Jeremy: {
-    name: "Jeremy Lipschutz",
+    name: "J Lipschutz",
     position: "President",
     label: "Junior, Computer Science"
   },
